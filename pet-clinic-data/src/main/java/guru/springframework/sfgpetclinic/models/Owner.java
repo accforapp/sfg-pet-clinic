@@ -50,4 +50,19 @@ public class Owner extends Person {
         .filter(pet -> !ignoreNew || !pet.isNew() && pet.getName().equalsIgnoreCase(finalName))
         .findAny().orElse(null);
   }
+
+//  public Pet getPet(String name, boolean ignoreNew) {
+//    name = name.toLowerCase(Locale.ROOT);
+//
+//    for (Pet pet : pets) {
+//      if (!ignoreNew || pet.isNew()) {
+//        String compName = pet.getName();
+//        compName = compName.toLowerCase(Locale.ROOT);
+//        if (compName.equals(name)) {
+//          return pet;
+//        }
+//      }
+//    }
+//    return null;
+//  }
 }
